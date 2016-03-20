@@ -1,0 +1,22 @@
+body, html
+  margin 0
+  padding 0
+body
+  padding 10px
+  display flex
+  flex-wrap wrap
+div
+  display inline-block
+  height 50px
+  margin 10px
+  background #eee
+  border 2px solid #999
+  box-sizing border-box
+@media (max-width: 768px)
+  for i in (1..12)
+    .s-{i}
+      width: "calc(%s% - 20px)" % (i/12*100);
+@media (min-width: 769px)
+  for i in (1..12)
+    .m-{i}
+      width: "calc(%s% - 20px)" % (i/12*100);
